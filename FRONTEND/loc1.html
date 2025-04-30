@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .section {
+            margin: 20px auto;
+            width: 400px;
+            text-align: left;
+            
+
+        }
+         .header{
+            background: #ffc107;
+            color: black;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>  
+        <div class="header">
+          TRAVEL MITHRA
+        </div>
+    
+        <div class="section">
+            <label>Enter the current location:</label><br>
+            <input type="text" id="currentLocation" required><br><br>
+
+            <label>Enter the destination location:</label><br>
+            <input type="text" id="destinationLocation" required><br><br>
+
+            <label>Select your travel class:</label><br>
+            <input type="radio" name="class" value="General Class" required> General Class<br>
+            <input type="radio" name="class" value="1st Class"> 1st Class<br>
+            <input type="radio" name="class" value="Super Class"> Super Class<br><br>
+           <img src="C:\Users\Happy\Downloads\WhatsApp Image 2025-04-29 at 5.31.12 PM.jpeg"
+             width="300" height="150">
+             <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 6.24.52 PM.jpeg"
+             width="300" height="75">
+
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("travelForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const cname = document.getElementById("currentLocation").value.toUpperCase();
+            const dname = document.getElementById("destinationLocation").value.toUpperCase();
+            const classChoice = document.querySelector('input[name="class"]:checked').value;
+
+            // Here, you can store the values if needed (example using sessionStorage)
+            sessionStorage.setItem("currentLocation", cname);
+            sessionStorage.setItem("destinationLocation", dname);
+            sessionStorage.setItem("classChoice", classChoice);
+
+            // Redirect to another page (success.html)
+            window.location.href = "success.html";
+        });
+    </script>
+<button><a href="next1.html">Get Started</a></button>
+</body>
+</html>

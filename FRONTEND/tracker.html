@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Tracking App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      padding: 20px;
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+    }
+
+    #map {
+      height: 80vh;
+      width: 100%;
+    }
+
+    .info-box {
+      padding: 10px;
+      background: #f9f9f9;
+      border-top: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .info-box span {
+      display: inline-block;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Vehicle Tracking System</h2>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="info-box">
+    <span><strong>Vehicle ID:</strong> V12345</span>
+    <span><strong>Number:</strong> MH12AB1234</span>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    // Sample coordinates (Pune, India)
+    var vehicleLat = 18.5204;
+    var vehicleLng = 73.8567;
+
+    var map = L.map('map').setView([vehicleLat, vehicleLng], 13);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add marker for vehicle location
+    var marker = L.marker([vehicleLat, vehicleLng]).addTo(map);
+    marker.bindPopup("<b>Vehicle V12345</b><br>MH12AB1234").openPopup();
+  </script>
+
+</body>
+</html>

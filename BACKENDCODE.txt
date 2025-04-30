@@ -1,0 +1,618 @@
+print("Welcome to Nama Yatri".center(100))
+
+cname = input("Enter the current location:\n").upper()
+dname = input("Enter the destination location:\n").upper()
+
+print("\nChoose your travel class:")
+print("1. General Class")
+print("2. 1st Class")
+print("3. Super Class")
+
+class_choice = input("Enter the number of your class choice (1/2/3): ")
+
+if class_choice == "1":
+    travel_class = "General Class"
+    print(f"\nYou selected: {travel_class}\n")
+
+    if cname == "MYSURU" and dname == "MANGALURU":
+        print("Welcome to the travel from Mysuru to Mangaluru\n")
+        travel_options = {
+            "Auto": 500,
+            "Bus": 300,
+            "Car": 1500,
+            "Train": 200,
+            "Flight": 5000
+        }
+        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+        print("-" * 22)
+        total_cost = 0
+        for mode, cost in travel_options.items():
+            print("{:<10} {:>10}".format(mode, cost))        
+        print("-" * 22)
+        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+            if ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Mangaluru to Shivamogga\n")
+                travel_options = {
+                    "Auto": 500,
+                    "Bus": 300,
+                    "Car": 1500,
+                    "Train": 200,
+                    "Flight": 5000
+                }
+                print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                print("-" * 22)
+                total_cost = 0
+                for mode, cost in travel_options.items():
+                    print("{:<10} {:>10}".format(mode, cost))        
+                print("-" * 22)   
+                choice = input("Do you want to add another destination after Shivamogga? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                    if ndname == "MANGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        travel_options = {
+                            "Auto": 500,
+                            "Bus": 300,
+                            "Car": 1500,
+                            "Train": 200,
+                            "Flight": 5000
+                        }
+                        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                        print("-" * 22)
+                        total_cost = 0
+                        for mode, cost in travel_options.items():
+                            print("{:<10} {:>10}".format(mode, cost))        
+                        print("-" * 22)
+                     
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "BENGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        travel_options = {
+                            "Auto": 500,
+                            "Bus": 300,
+                            "Car": 1500,
+                            "Train": 200,
+                            "Flight": 5000
+                        }
+                        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                        print("-" * 22)
+                        total_cost = 0
+                        for mode, cost in travel_options.items():
+                            print("{:<10} {:>10}".format(mode, cost))        
+                        print("-" * 22)        
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "HUBBALI":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        travel_options = {
+                            "Auto": 500,
+                            "Bus": 300,
+                            "Car": 1500,
+                            "Train": 200,
+                            "Flight": 5000
+                        }
+                        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                        print("-" * 22)
+                        total_cost = 0
+                        for mode, cost in travel_options.items():
+                             print("{:<10} {:>10}".format(mode, cost))        
+                        print("-" * 22)
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+                            if choice == "yes":
+                                ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                                if ndname == "MANGALURU":
+                                    print("Continuing your journey from Shivamogga to Mangaluru \n")
+                                    travel_options = {
+                                        "Auto": 500,
+                                        "Bus": 300,
+                                        "Car": 1500,
+                                        "Train": 200,
+                                        "Flight": 5000
+                                    }
+                                    print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                                    print("-" * 22)
+                                    total_cost = 0
+                                    for mode, cost in travel_options.items():
+                                        print("{:<10} {:>10}".format(mode, cost))        
+                                    print("-" * 22)
+                                    choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                                    if choice == "yes":
+                                        ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                                    else:
+                                        print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "MYSURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        travel_options = {
+                            "Auto": 500,
+                            "Bus": 300,
+                            "Car": 1500,
+                            "Train": 200,
+                            "Flight": 5000
+                        }
+                        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                        print("-" * 22)
+                        total_cost = 0
+                        for mode, cost in travel_options.items():
+                            print("{:<10} {:>10}".format(mode, cost))        
+                        print("-" * 22)
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    else:
+                        print("Journey ended at Shivamogga.\n")
+
+            elif ndname == "BENGALURU":
+                print("Continuing your journey from Mangaluru to Bengaluru\n")
+                travel_options = {
+                    "Auto": 500,
+                    "Bus": 300,
+                    "Car": 1500,        
+                    "Train": 200,
+                    "Flight": 5000
+                }
+                print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                print("-" * 22)
+                total_cost = 0
+                for mode, cost in travel_options.items():
+                    print("{:<10} {:>10}".format(mode, cost))        
+                print("-" * 22)
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+
+            elif ndname == "HUBBALI":
+                print("Continuing your journey from Bengaluru to Hubbali\n")
+                travel_options = {
+                    "Auto": 500,
+                    "Bus": 300,
+                    "Car": 1500,
+                    "Train": 200,
+                    "Flight": 5000
+                }
+                print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                print("-" * 22)
+                total_cost = 0
+                for mode, cost in travel_options.items():
+                    print("{:<10} {:>10}".format(mode, cost))        
+                print("-" * 22)
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+            else:
+                print("Destination not recognized after Mangaluru.\n")
+        else:
+            print("Journey ended at Mangaluru.\n")
+
+    elif cname == "MYSURU" and dname == "BENGALURU":
+        print("Welcome to the travel from Mysuru to Bengaluru\n")
+        travel_options = {
+            "Auto": 500,
+            "Bus": 300,
+            "Car": 1500,
+            "Train": 200,
+            "Flight": 5000
+        }
+        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+        print("-" * 22)
+        total_cost = 0
+        for mode, cost in travel_options.items():
+            print("{:<10} {:>10}".format(mode, cost))        
+        print("-" * 22)
+        choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Bengaluru:\n").upper()
+            if ndname == "MANGALURU":
+                print("Continuing your journey from Bengaluru to Mangaluru\n")
+                travel_options = {
+                    "Auto": 500,
+                    "Bus": 300,
+                    "Car": 1500,
+                    "Train": 200,
+                    "Flight": 5000
+                }
+                print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                print("-" * 22)
+                total_cost = 0
+                for mode, cost in travel_options.items():
+                    print("{:<10} {:>10}".format(mode, cost))        
+                print("-" * 22)
+            elif ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Bengaluru to Shivamogga\n")
+                travel_options = {
+                    "Auto": 500,
+                    "Bus": 300,
+                    "Car": 1500,
+                    "Train": 200,
+                    "Flight": 5000
+                }
+                print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+                print("-" * 22)
+                total_cost = 0
+                for mode, cost in travel_options.items():
+                    print("{:<10} {:>10}".format(mode, cost))        
+                print("-" * 22)
+            else:
+                print("Destination not recognized after Bengaluru.\n")
+        else:
+            print("Journey ended at Bengaluru.\n")
+
+    else:
+        print("Route not recognized. Thank you!\n")
+
+elif class_choice == "2":
+    travel_class = "General Class"
+    print(f"\nYou selected: {travel_class}\n")
+
+    if cname == "MYSURU" and dname == "MANGALURU":
+        print("Welcome to the travel from Mysuru to Mangaluru\n")
+        print("Auto=500 rs/-")
+        print("Bus=300 rs/-")
+        print("Car=1500 rs/-")
+        print("Train=200 rs/-")
+        print("flight=5000 rs/-")
+        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+            if ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Mangaluru to Shivamogga\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Shivamogga? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                    if ndname == "MANGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "BENGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "HUBBALI":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+                            if choice == "yes":
+                                ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                                if ndname == "MANGALURU":
+                                    print("Continuing your journey from Shivamogga to Mangaluru \n")
+                                    print("Auto=500 rs/-")
+                                    print("Bus=300 rs/-")
+                                    print("Car=1500 rs/-")
+                                    print("Train=200 rs/-")
+                                    print("flight=5000 rs/-")
+                                    choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                                    if choice == "yes":
+                                        ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                                    else:
+                                        print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "MYSURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    else:
+                        print("Journey ended at Shivamogga.\n")
+
+            elif ndname == "BENGALURU":
+                print("Continuing your journey from Mangaluru to Bengaluru\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+
+            elif ndname == "HUBBALI":
+                print("Continuing your journey from Bengaluru to Hubbali\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+            else:
+                print("Destination not recognized after Mangaluru.\n")
+        else:
+            print("Journey ended at Mangaluru.\n")
+
+    elif cname == "MYSURU" and dname == "BENGALURU":
+        print("Welcome to the travel from Mysuru to Bengaluru\n")
+        print("Auto=500 rs/-")
+        print("Bus=300 rs/-")
+        print("Car=1500 rs/-")
+        print("Train=200 rs/-")
+        print("flight=5000 rs/-")
+        choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Bengaluru:\n").upper()
+            if ndname == "MANGALURU":
+                print("Continuing your journey from Bengaluru to Mangaluru\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+            elif ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Bengaluru to Shivamogga\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+            else:
+                print("Destination not recognized after Bengaluru.\n")
+        else:
+            print("Journey ended at Bengaluru.\n")
+
+    else:
+        print("Route not recognized. Thank you!\n")
+    
+
+elif class_choice == "3":
+    travel_class = "General Class"
+    print(f"\nYou selected: {travel_class}\n")
+
+    if cname == "MYSURU" and dname == "MANGALURU":
+        print("Welcome to the travel from Mysuru to Mangaluru\n")
+        travel_options = {
+            "Auto": 500,
+            "Bus": 300,
+            "Car": 1500,
+            "Train": 200,
+            "Flight": 5000
+        }
+        print("{:<10} {:>10}".format("Mode", "Cost (Rs)"))
+        print("-" * 22)
+        total_cost = 0
+        for mode, cost in travel_options.items():
+            print("{:<10} {:>10}".format(mode, cost))
+            total_cost += cost
+        print("-" * 22)
+        print("{:<10} {:>10}".format("Total", total_cost))
+        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+            if ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Mangaluru to Shivamogga\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")         
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Shivamogga? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                    if ndname == "MANGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "BENGALURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "HUBBALI":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+                            if choice == "yes":
+                                ndname = input("Enter the next destination after Shivamogga:\n").upper()
+                                if ndname == "MANGALURU":
+                                    print("Continuing your journey from Shivamogga to Mangaluru \n")
+                                    print("Auto=500 rs/-")
+                                    print("Bus=300 rs/-")
+                                    print("Car=1500 rs/-")
+                                    print("Train=200 rs/-")
+                                    print("flight=5000 rs/-")
+                                    choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                                    if choice == "yes":
+                                        ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                                    else:
+                                        print("Journey ended at Mangaluru.\n")
+
+                    elif ndname == "MYSURU":
+                        print("Continuing your journey from Shivamogga to Mangaluru \n")
+                        print("Auto=500 rs/-")
+                        print("Bus=300 rs/-")
+                        print("Car=1500 rs/-")
+                        print("Train=200 rs/-")
+                        print("flight=5000 rs/-")
+                        choice = input("Do you want to add another destination after Mangaluru? (yes/no):\n").lower()
+
+                        if choice == "yes":
+                            ndname = input("Enter the next destination after Mangaluru:\n").upper()
+                        else:
+                            print("Journey ended at Mangaluru.\n")
+
+                    else:
+                        print("Journey ended at Shivamogga.\n")
+
+            elif ndname == "BENGALURU":
+                print("Continuing your journey from Mangaluru to Bengaluru\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+
+            elif ndname == "HUBBALI":
+                print("Continuing your journey from Bengaluru to Hubbali\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+                choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+                if choice == "yes":
+                    ndname = input("Enter the next destination after Bengaluru:\n").upper()
+                else:
+                    print("Journey ended at Bengaluru.\n")
+            else:
+                print("Destination not recognized after Mangaluru.\n")
+        else:
+            print("Journey ended at Mangaluru.\n")
+
+    elif cname == "MYSURU" and dname == "BENGALURU":
+        print("Welcome to the travel from Mysuru to Bengaluru\n")
+        print("Auto=500 rs/-")
+        print("Bus=300 rs/-")
+        print("Car=1500 rs/-")
+        print("Train=200 rs/-")
+        print("flight=5000 rs/-")
+        choice = input("Do you want to add another destination after Bengaluru? (yes/no):\n").lower()
+
+        if choice == "yes":
+            ndname = input("Enter the next destination after Bengaluru:\n").upper()
+            if ndname == "MANGALURU":
+                print("Continuing your journey from Bengaluru to Mangaluru\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+            elif ndname == "SHIVAMOGGA":
+                print("Continuing your journey from Bengaluru to Shivamogga\n")
+                print("Auto=500 rs/-")
+                print("Bus=300 rs/-")
+                print("Car=1500 rs/-")
+                print("Train=200 rs/-")
+                print("flight=5000 rs/-")
+            else:
+                print("Destination not recognized after Bengaluru.\n")
+        else:
+            print("Journey ended at Bengaluru.\n")
+
+    else:
+        print("Route not recognized. Thank you!\n")
+else:
+    travel_class = "Unknown Class"
+    print(f"\nYou selected: {travel_class}\n")
+print("Thank you!".center(100))

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Planner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      padding: 40px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+.bottom-toolbar {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .toolbar-icon {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
+        .toolbar-icon img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Travel Planner</h2>
+    <form id="travelForm">
+      <label for="currentLocation">Enter Current Location:</label>
+      <input type="text" id="currentLocation" name="currentLocation" value="Mysuru" required>
+
+      <label for="destination">Enter Final Destination:</label>
+      <input type="text" id="destination" name="destination" value="Bengaluru" required>
+
+      <label for="time">Estimated Time to Reach (in hours):</label>
+      <input type="text" id="time" name="time" value="3.5 hours" required>
+
+      <label for="cost">Estimated Cost:</label>
+      <input type="text" id="cost" name="cost" value="₹600 - ₹900" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+<!-- Your main page content above -->
+
+<!-- Bottom Toolbar -->
+<div class="bottom-toolbar">
+    <a class="toolbar-icon" href="a2.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM.jpeg" alt="Home">
+        Home
+    </a>
+       <a class="toolbar-icon" href="tracker.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM (1).jpeg" alt="Tracker">
+        Tracker
+    </a>
+    <a class="toolbar-icon" href="activity.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM.jpeg" alt="Activity">
+        Activity
+    </a>
+    <a class="toolbar-icon" href="easygo.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-30 at 3.16.11 AM.jpeg" alt="Easy Go">
+        Easy go
+    </a>
+    <a class="toolbar-icon" href="accounts.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM (1).jpeg" alt="Account">
+        Account
+     <a href="C:\Users\Happy\OneDrive\ドキュメント\html\accounts.html"> </a>
+    </a>
+
+
+</div>
+
+</body>
+</html>

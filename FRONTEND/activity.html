@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity - Travel Mithra</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff;
+        }
+
+        .header {
+            background: #ffc107;
+            color: black;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+        }
+
+        .header small {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .activity-section {
+            padding: 10px 16px;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .ride {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ride img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .ride-info {
+            flex: 1;
+            margin-left: 12px;
+        }
+
+        .ride-info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .ride-info p {
+            margin: 4px 0;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .rebook-btn {
+            background: #f5f5f5;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .rebook-btn:before {
+            content: "⟳";
+            margin-right: 6px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+            padding: 10px 0;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .bottom-nav div {
+            text-align: center;
+            font-size: 12px;
+            color: black;
+        }
+
+        .bottom-nav img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto 4px;
+        }
+
+        .bottom-toolbar {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .toolbar-icon {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
+        .toolbar-icon img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Activity
+        <small>Location sharing disabled. Tap here to enable</small>
+    </div>
+
+    <div class="activity-section">
+        <div class="title">Activity</div>
+
+        <div class="ride">
+            <img src="train.jpg" alt="auto">
+            <div class="ride-info">
+                <h3>mysore to banglore</h3>
+                <p>11 Apr • 14:09<br>₹0.00 • Cancelled</p>
+            </div>
+            <button class="rebook-btn">Rebook</button>
+        </div>
+
+        <div class="ride">
+            <img src="flight.jpg" alt="auto">
+            <div class="ride-info">
+                <h3>banglore to mumbai</h3>
+                <p>8 Feb • 15:42<br>₹1072.00</p>
+            </div>
+            <button class="rebook-btn">Rebook</button>
+        </div>
+
+        <div class="ride">
+            <img src="auto.jpg" alt="auto">
+            <div class="ride-info">
+                <h3>Chamundeshwari Bettada Paada</h3>
+                <p>8 Feb • 09:50<br>₹56.00</p>
+            </div>
+            <button class="rebook-btn">Rebook</button>
+        </div>
+
+        <div class="ride">
+            <img src="bus.jpg" alt="auto">
+            <div class="ride-info">
+                <h3>mysore to nanjangudu</h3>
+                <p>26 Sept • 08:11<br>₹51.00</p>
+            </div>
+            <button class="rebook-btn">Rebook</button>
+        </div>
+
+        <div class="ride">
+            <img src="car.jpg" alt="bike">
+            <div class="ride-info">
+                <h3>Sri Devi Nursing Home</h3>
+                <p>16 Sept • 16:44<br>₹120.00</p>
+            </div>
+            <button class="rebook-btn">Rebook</button>
+        </div>
+    </div>
+
+<!-- Bottom Toolbar -->
+<div class="bottom-toolbar">
+    <a class="toolbar-icon" href="a2.html">
+        <img src="home.jpg" alt="Home">
+        Home
+    </a>
+   </div>
+</body>
+</html>

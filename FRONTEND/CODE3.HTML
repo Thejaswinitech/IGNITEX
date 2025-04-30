@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Modes & Expenses: Mysore to Bangalore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 2rem;
+    }
+
+    h2, h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .mode-name {
+      font-weight: bold;
+    }
+
+    .icon-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .icon-box {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .icon-box:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+
+    .label {
+      text-align: center;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flight { background-color: #1e90ff; }
+    .bus { background-color: #28a745; }
+    .car { background-color: #ffc107; color: black; }
+    .auto { background-color: #ff5722; }
+    .bike { background-color: #6f42c1; }
+
+    .auto svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+    }
+.bottom-toolbar {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .toolbar-icon {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
+        .toolbar-icon img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+  </style>
+</head>
+<body>
+
+  <h2>Travel Modes and Expense Details (Mysore to Bangalore)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Travel Mode</th>
+        <th>General</th>
+        <th>First Class</th>
+        <th>Super Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="mode-name">Flight</td>
+        <td>₹14,000</td>
+        <td>₹28,000</td>
+        <td>₹45,000</td>
+      </tr>
+      <tr>
+        <td class="mode-name">Bus</td>
+        <td>₹300</td>
+        <td>₹950</td>
+        <td>₹1500</td>
+      </tr>
+      <tr>
+        <td class="mode-name">Car</td>
+        <td>₹2,000</td>
+        <td>₹4,000</td>
+        <td>₹6,000</td>
+      </tr>
+      <tr>
+        <td class="mode-name">Auto</td>
+        <td>₹1500</td>
+        <td>₹2500</td>
+        <td>₹3500</td>
+      </tr>
+      <tr>
+        <td class="mode-name">Bike</td>
+        <td>₹1000</td>
+        <td>₹2000</td>
+        <td>₹3000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="icon-section">
+    <h3>Select the mode of transportation</h3>
+    <div class="icon-container">
+      <div class="icon-item">
+        <a href="flight.html" class="icon-box flight" title="Flight">
+          <i class="fas fa-plane"></i>
+        </a>
+        <div class="label">Flight</div>
+      </div>
+      <div class="icon-item">
+        <a href="bus.html" class="icon-box bus" title="Bus">
+          <i class="fas fa-bus"></i>
+        </a>
+        <div class="label">Bus</div>
+      </div>
+      <div class="icon-item">
+        <a href="car.html" class="icon-box car" title="Car">
+          <i class="fas fa-car"></i>
+        </a>
+        <div class="label">Car</div>
+      </div>
+      <div class="icon-item">
+        <a href="auto.html" class="icon-box auto" title="Auto">
+          <!-- Inline SVG for auto rickshaw -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <path d="M544 192h-16v-32c0-53-43-96-96-96H96c-53 0-96 43-96 96v160c0 17.7 14.3 32 32 32h8c0 35.3 28.7 64 64 64s64-28.7 64-64h192c0 35.3 28.7 64 64 64s64-28.7 64-64h40c35.3 0 64-28.7 64-64s-28.7-64-64-64zM96 128h336c35.3 0 64 28.7 64 64v32H96v-32c0-35.3 28.7-64 64-64zM96 400c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm320 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-96h-40v-64h40c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
+          </svg>
+        </a>
+        <div class="label">Auto</div>
+      </div>
+      <div class="icon-item">
+        <a href="bike.html" class="icon-box bike" title="Bike">
+          <i class="fas fa-bicycle"></i>
+        </a>
+        <div class="label">Bike</div>
+      </div>
+    </div>
+  </div>
+
+<!-- Your main page content above -->
+
+<!-- Bottom Toolbar -->
+<div class="bottom-toolbar">
+    <a class="toolbar-icon" href="home.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM.jpeg" alt="Home">
+        Home
+    </a>
+    <a class="toolbar-icon" href="tracker.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM (1).jpeg" alt="Tracker">
+        Tracker
+    </a>
+    <a class="toolbar-icon" href="C:\Users\yy291\OneDrive\Desktop\travel mitra.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM.jpeg" alt="Activity">
+        Activity
+    </a>
+    <a class="toolbar-icon" href="easygo.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-30 at 3.16.11 AM.jpeg" alt="Easy Go">
+        Easy go
+    </a>
+    <a class="toolbar-icon" href="account.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM (1).jpeg" alt="Account">
+        Account
+    </a>
+</div>
+
+</body>
+</html>

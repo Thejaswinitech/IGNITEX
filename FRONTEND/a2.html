@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Planner India</title>
+  <style>
+    .body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f9ff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .h1 {
+      color: #2c3e50;
+    }
+
+    .form {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .input, select {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .travel-modes {
+      margin-top: 20px;
+    }
+
+    .travel-option {
+      display: inline-block;
+      padding: 15px;
+      margin: 10px;
+      background-color: #e6f2ff;
+      border-radius: 10px;
+      border: 2px solid #007bff;
+      width: 100px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .travel-option:hover {
+      background-color: #cce5ff;
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .bottom-toolbar {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .toolbar-icon {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
+        .toolbar-icon img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+  </style>
+</head>
+<body>
+
+  <h1>TRAVEL MITHRA</h1>
+  
+  <form onsubmit="submitForm(); return false;">
+    <input type="text" id="currentLocation" placeholder="Enter Current Location" required><br>
+    <input type="datetime-local" id="dateTime" required><br>
+    <input type="text" id="destination" placeholder="Enter Destination" required><br>
+
+    <div class="travel-modes">
+            <div class="travel-option" onclick="selectMode('Bus')">
+        <div class="icon">🚌</div>
+        Bus
+      </div>
+      <div class="travel-option" onclick="selectMode('Car')">
+        <div class="icon">🚗</div>
+        Car
+      </div>
+      <div class="travel-option" onclick="selectMode('Train')">
+        <div class="icon">🚆</div>
+        Train
+      </div>
+      <div class="travel-option" onclick="selectMode('Auto')">
+        <div class="icon">🚖</div>
+        Auto
+      </div>
+      <div class="travel-option" onclick="selectMode('Flight')">
+        <div class="icon">✈️</div>
+        Flight
+      </div>
+    </div>
+
+    <input type="hidden" id="travelMode" required>
+
+    <button><a href="CODE3.html">Submit</a></button>
+  </form>
+
+  <script>
+    function selectMode(mode) {
+      document.getElementById('travelMode').value = mode;
+      alert('Selected travel mode: ' + mode);
+    }
+
+    function submitForm() {
+      const currentLocation = document.getElementById('currentLocation').value;
+      const dateTime = document.getElementById('dateTime').value;
+      const destination = document.getElementById('destination').value;
+      const travelMode = document.getElementById('travelMode').value;
+
+      
+        return;
+      }
+
+      alert(
+        "Trip Details:\n" +
+        "From: " + currentLocation + "\n" +
+        "To: " + destination + "\n" +
+        "Date & Time: " + dateTime + "\n" +
+        "Mode: " + travelMode
+      );
+
+      // Here you could send this data to a server or redirect
+    }
+  </script>
+<!-- Your main page content above -->
+
+<!-- Bottom Toolbar -->
+<div class="bottom-toolbar">
+    <a class="toolbar-icon" href="a2.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM.jpeg" alt="Home">
+        Home
+    </a>
+    <a class="toolbar-icon" href="tracker.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM (1).jpeg" alt="Tracker">
+        Tracker
+    </a>
+    <a class="toolbar-icon" href="activity.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.29 PM.jpeg" alt="Activity">
+        Activity
+    </a>
+    <a class="toolbar-icon" href="easygo.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-30 at 3.16.11 AM.jpeg" alt="Easy Go">
+        Easy go
+    </a>
+    <a class="toolbar-icon" href="accounts.html">
+        <img src="C:\Users\Happy\OneDrive\ドキュメント\html\WhatsApp Image 2025-04-29 at 2.59.28 PM (1).jpeg" alt="Account">
+        Account
+     <a href="C:\Users\Happy\OneDrive\ドキュメント\html\accounts.html"> </a>
+    </a>
+
+</body>
+</html>
